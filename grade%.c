@@ -3,7 +3,7 @@ int main()
 {
     double math, eng, hin, sci, evs, per;
     printf("Enter the marks of all five subjects out of 100:");
-    scanf("%lf %lf %lf %lf %lf ", &math, &eng, &hin, &sci, &evs);
+    scanf("%lf %lf %lf %lf %lf", &math, &eng, &hin, &sci, &evs);
     per = ((math+eng+hin+sci+evs)/500)*100;
     printf("Your percentage is:%.2lf",per);
 
