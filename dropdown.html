@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="items">Items in your cart:</label>
+    <select name="items" id="items">
+        <option value="MAGGI">MAGGI</option>
+        <option value="PIZZA">PIZZA</option>
+        <option value="PASTA">PASTA</option>
+        <option value="JUICE">JUICE</option>
+        <option value="BURGER">BURGER</option>
+    </select>
+    <br><br>
+    <label for="purchased">Purchased items:</label>
+    <select name="purchasedd" id="purchasedd">
+    <button></button>
+        <option value="PASTA">PASTA</option>
+        <option value="JUICE">JUICE</option>
+    </select>
+    <br>
+    <br>
+    <button onclick="button()">Items remained</button>
+    <button onclick="button2()">Purchase</button>
+
+    <script>
+        function button() {
+          alert("remained items : PIZZA,MAGGI,BURGER");
+        }
+        function button2() {
+          alert("Enjoy your Meal!");
+        }
+        </script>
+</body>
+</html>

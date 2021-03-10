@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    
+    <button id="single">Click</button>
+    <p id="demo">This is my first paragraph.</p>
+    <button id="double">DbClick</button><br>
+    <p id="demo1">Hello,This is my first paragraph.</p>
+    <button id="hover">Hover</button><br>
+    <p id="demo2">This is my first paragraph.</p>
+    <button id="hide">Hide</button><br>
+        <button id="show">Show</button><br>
+        <p id="demo3">This is my first paragraph.</p>
+    
+  </body>
+  <script>
+    $('document').ready(function () {
+      $('#single').click(function () {
+        $('#demo').css({
+          color: 'red',
+        });
+      });
+      $('#double').dblclick(function () {
+        $('#demo1').css({
+          color: 'green',
+        });
+      });
+      $('#hover').mouseenter(function () {
+        $('#demo2').css({
+          color: 'blue',
+        });
+      });
+      $('#hide').click(function () {
+        $('#demo3').hide();
+      });
+      $('#show').click(function () {
+        $('#demo3').show();
+      });
+    });
+  </script>
+</html>

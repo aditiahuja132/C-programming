@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#p1").css("color", "blue").slideUp(2000).slideDown(2000);
+  });
+  $("button").click(function(){
+    $("#p2").fadeOut(3000).fadeIn(2000);
+  });
+});
+
+</script>
+</head>
+<body>
+
+<p id="p1" style="font-size: x-large;">Aditi is unique!</p>
+
+<button id="p1" style="font-size: x-large;">WOW</button>
+<button  style="font-size: x-large;">FADE</button>
+
+</body>
+</html>

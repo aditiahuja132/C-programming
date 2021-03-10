@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Welcome to Chitkara University</title>
+	</head>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+		}
+		input, #input{
+			overflow: hidden;
+			width: 100%;
+		}
+    </style>
+    	<body style="background-color: cyan;">
+		<table>
+		<th  style="background-color: blueviolet;" colspan="2">
+			Welcome to Chitkara University
+        </th>
+       
+		<tr>
+			<td>Name</td>
+			<td id="input"><input type=text></td>
+		</tr>
+		<tr>
+			<td>Roll. No.</td>
+			<td id="input"><input type=number></td>
+		</tr>
+		<tr>
+			<td>Username/ID</td>
+			<td id="input"><input type=text></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td id="input"><input type=password minlength="9" placeholder="Enter 3 variable 3 numeric and 3 special symbols"></td>
+		</tr>
+        </table>
+        <button>ok</button>
+        
+        <button onclick="myFunction()">Submit</button>
+
+<script>
+function myFunction() {
+  alert("Your form is submitted");
+}
+</script>
+    
+	</body>
+</html>
